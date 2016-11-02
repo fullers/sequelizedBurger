@@ -1,0 +1,35 @@
+{
+  "name": "burger",
+  "version": "0.1.0",
+  "description": "Burger logger - Node.js application that connects to an SQL Database and logs the burgers entered by users.  This will have a devour it button thatlets the user devour the burger.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fullers/burger.git"
+  },
+  "keywords": [
+    "Node.js",
+    "Express",
+    "Handlebars",
+    "MySQL"
+  ],
+  "author": "Shaun L. Fuller",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fullers/burger/issues"
+  },
+  "homepage": "https://github.com/fullers/burger#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.5",
+    "method-override": "^2.3.6",
+    "mysql": "^2.11.1",
+    "sequelize": "^3.24.6"
+  }
+}
