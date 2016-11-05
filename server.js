@@ -6,8 +6,22 @@ express middleware.
 var express = require('express');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override');
-
+var Sequelize = require('sequelize');
+var models  = require('./models');
 var app = express();
+
+var sequelizeConnection = models.sequelize;
+
+// // We run this query so that we can drop our tables even though they have foreign keys
+// sequelizeConnection.query('SET FOREIGN_KEY_CHECKS = 0')
+
+// // sync the tables
+// .then(function(){
+// 	return sequelizeConnection.sync({force:true})
+// })
+
+// sync the tables
+sequelizeConnection.sync()
 
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static(process.cwd() + '/public'));

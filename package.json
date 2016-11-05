@@ -9,20 +9,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fullers/burger.git"
+    "url": "git+https://github.com/fullers/sequelizedBurger.git"
   },
   "keywords": [
     "Node.js",
     "Express",
     "Handlebars",
-    "MySQL"
+    "MySQL",
+    "Sequelize"
   ],
   "author": "Shaun L. Fuller",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/fullers/burger/issues"
+    "url": "https://github.com/fullers/sequelizedBurger/issues"
   },
-  "homepage": "https://github.com/fullers/burger#readme",
+  "homepage": "https://github.com/fullers/sequelizedBurger#readme",
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
@@ -30,6 +31,7 @@
     "handlebars": "^4.0.5",
     "method-override": "^2.3.6",
     "mysql": "^2.11.1",
-    "sequelize": "^3.24.6"
+    "sequelize": "^3.24.6",
+    "sequelize-cli": "^2.4.0"
   }
 }
