@@ -1,7 +1,7 @@
 'use strict';
 
 // Require our models
-var burger = require('../models')['burgers'];
+var burger = require('../models')['burgers']
 
 module.exports = {
   up: function (queryInterface, Sequelize) {
