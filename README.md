@@ -1,7 +1,7 @@
 # Eat Da Burger!
 This is a full-stack web application that uses Node.js, Express, Handlebars (HTML Temaplate), and Sequelize for MySQL.  This application allows a user to enter and submit a name of burger they want to eat then place that burger in a list on the left side, then give the user the ability to devour the burger by pressing the **Devour it!** button.  Once devour then burger will show in a list on the right side.
 
-You may go to [https://fullers-sequelizedBurger.herokuapp.com](https://fullers-sequelizedBurger.herokuapp.com) to view a demo of the application.
+You may go to [https://fullers-sequelizedburger.herokuapp.com](https://fullers-sequelizedburger.herokuapp.com) to view a demo of the application.
 
 
 ## Technologies used
