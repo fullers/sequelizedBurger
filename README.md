@@ -25,7 +25,7 @@ The following technologies, tools, and npm packages were used:
 
 * **server.js** - File used to start the node.js web server.
 * **package.json** - File used to insta the npm packages.
-* **.gitignore** - File used to ignore the node_modules file used by NPM and connect.js
+* **.gitignore** - File used to ignore the node_modules folder used by NPM.
 * **config** - Folder to with connect.js and orm.js
 	* config.json - Sets connection to SQL Database for developement and Production (JawsDB)
 * **controllers** - Folder to store controller files
