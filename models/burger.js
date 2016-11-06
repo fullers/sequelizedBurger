@@ -7,9 +7,15 @@ module.exports = function(sequelize, DataTypes) {
       defaultValue: false
     }
   }, {
+    tableName: 'burgers',
     classMethods: {
       associate: function(models) {
-        // associations can be defined here
+         burgers.belongsTo(models.customer, {
+            onDelete: "CASCADE",
+            foreignKey: {
+            allowNull: false
+          }
+        })
       }
     }
   });

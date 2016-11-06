@@ -18,6 +18,7 @@
 						<form class="form-group" action="burgers/updateOne/{{this.id}}?_method=PUT" method="POST">
 							<div class="col-md-6">
 					  			<input class="form-control" type="hidden" name="devoured" value="true">
+					  			<input class="form-control" id="customer" name="customer" placeholder="Customer?">
 					       		<button class="btn btn-default btn-sm" type="submit">Devour it!</button>
 				       		</div>
 						</form>		
@@ -34,7 +35,7 @@
 				      <li>
 				      	<div class="row">
 				      	<div class="col-md-6">
-				        <div class="well well-sm text-left">{{this.id}}. {{this.burger_name}}</div>
+				        <div class="well well-sm text-left">{{this.id}}. {{this.burger_name}} (Eaten by {{this.customer.customer}} )</div>
 					        <form class="form-group" action="burgers/updateOne/{{this.id}}?_method=PUT" method="POST">
 					          <input class="form-control" type="hidden" name="devoured" value="false">
 					        </form>
