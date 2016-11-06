@@ -33,6 +33,9 @@ The following technologies, tools, and npm packages were used:
 * **db** - Folder to store sql files
 	* schema.sql - File to create database and table for the database.
 	* seeds.sql - File that inserts default data into the database table.
+* **migrations** - Folder to store migration files
+	* 20161102224411-create-burger.js - File that creates the burgers table in the SQL Database.
+	* 20161105222118-insert-burgers.js - File that populates data in the burgers table.
 * **models** - Folder to house your model files.
 	* burger.js - File created by sequelize model create that sets up the table in SQL DB.
 * **public** - Folder to store any files the browser needs to access.
@@ -45,6 +48,8 @@ The following technologies, tools, and npm packages were used:
 
 ## Requirements
 
+Create a DB called burgers2_db
+
 You will need to edit a file called config.json and replace the following code, replacing **Your username**, **Your Password**, and **Your DB** with the appropriate information:
 
 ```javascript
@@ -53,7 +58,7 @@ You will need to edit a file called config.json and replace the following code, 
   "development": {
     "username": "Your Username",
     "password": "Your Password",
-    "database": "Your DB",
+    "database": "burgers2_db",
     "host": "localhost",
     "dialect": "mysql"
   },
