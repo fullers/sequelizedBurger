@@ -35,7 +35,7 @@ module.exports = {
       return queryInterface.dropTable('users');
     */
     // remove all instances of these burgers from the table
-    return burger.destroy({where:{burger_name: [
+    return burger.destroy({ where:{burger_name: [
 
       "Quarter Pound Cheese Burger",
       "Big Mac",
@@ -43,6 +43,8 @@ module.exports = {
       "A1 Bacon Swiss Burger",
       "Turkey Burger"
 
-      ]}})
+      ]},
+      truncate: true
+    })
   }
 };
