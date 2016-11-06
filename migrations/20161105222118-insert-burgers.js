@@ -1,7 +1,7 @@
 'use strict';
 
 // Require our models
-var models = require("../models");
+var burger = require('../models')['burgers'];
 
 module.exports = {
   up: function (queryInterface, Sequelize) {
@@ -14,7 +14,7 @@ module.exports = {
     */
 
     // bulk insert these entries using our model
-    return models.burger.bulkCreate(
+    return burger.bulkCreate(
       [
         {burger_name: "Quarter Pound Cheese Burger"},
         {burger_name: "Big Mac"},
@@ -35,7 +35,7 @@ module.exports = {
       return queryInterface.dropTable('users');
     */
     // remove all instances of these burgers from the table
-    return models.burger.destroy({where:{burger_name: [
+    return burger.destroy({where:{burger_name: [
 
       "Quarter Pound Cheese Burger",
       "Big Mac",
